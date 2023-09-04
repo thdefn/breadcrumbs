@@ -27,6 +27,7 @@ public class PageService {
                 .title(vo.getTitle())
                 .content(vo.getContent())
                 .subPages(vo.getSubPages())
+                .parentPageId(vo.getParentPageId())
                 .breadcrumbs(PageCache.breadcrumb.get(pageId))
                 .build();
     }
