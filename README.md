@@ -25,9 +25,14 @@
 - 상위 페이지와 하위 페이지 간 **1:N 관계**
   - 상위 페이지가 여러개의 하위 페이지를 가지고 있을 수 있음
 
+<img width="212" alt="스크린샷 2023-09-04 오후 7 37 24" src="https://github.com/thdefn/breadcrumbs/assets/80521474/a0339dca-de44-4c36-bbfc-adb30efa291a">
+
 
 ### 비즈니스 로직
 - **스프링부트가 올라갈 때** - `HashMap` 을 통한 브로드 크럼스 정보 캐싱
+  
+  <img width="160" alt="스크린샷 2023-09-04 오전 8 09 19" src="https://github.com/thdefn/breadcrumbs/assets/80521474/fd20615a-59dc-4d65-9966-9d96f49f8a2a">
+
   ```sql
     select parent_page_id, id  from page order by parent_page_id
   ```
