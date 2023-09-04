@@ -1,0 +1,13 @@
+package wanted.breadcrumbs;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BreadcrumbsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BreadcrumbsApplication.class, args);
+	}
+
+}
